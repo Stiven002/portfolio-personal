@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;500;600&display=swap');
+
+body{
+    font-family: 'Mukta', sans-serif;
+    background-color: hsl(212, 28%, 12%);
+}
+
+/* header */
+.header{
+    height: 100vh;
+    background-image: url(../img/certificado/bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arm{
+    width: 700px;
+    height: 300px;
+}
+
+.left{
+    transform: translateX(-80px);
+}
+
+.right{
+    transform: translateX(80px);
+}
+
+.header__logos{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    animation: turn1 10s linear infinite;
+}
+
+.rulete{
+    position: absolute;
+}
+
+.one{
+    width: 350px;
+    height: 350px;
+    animation: turn2 16s linear infinite;
+}
+
+.two{
+    width: 700px;
+    height: 700px;
+    animation: turn1 26s linear infinite;
+}
+
+@keyframes turn1{
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes turn2{
+    to{
+        transform: rotate(-1turn);
+    }
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sololearn__title--container{
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    border-bottom: 1px solid#fff;
+}
+
+.sololearn__logo{
+    width: 70px;
+    height: 70px;
+}
+
+.sololearn__title{
+    color: #fff;
+    font-size: 50px;
+}
+
+.cretificados{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cerficados__img{
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.cerficado__title{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: .75rem;
+}
+
+#img-active{
+    width: 100%;
+    height: auto;
+}
+
+.container__imgs--actives{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .65);
+}
+
+.container__imgs{
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container__imgs button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#btn-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+}
+
+#btn-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 3rem;
+}
+
+#btn-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 3rem;
+}
+
+/* scroll bar */
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: #fff;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: hsl(0, 0%, 3%);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(0, 0%, 3%);
+}
+
+@media screen and (max-width: 1200px) {
+    .left{
+        transform: translateX(-120px);
+    }
+    
+    .right{
+        transform: translateX(40px);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .arm{
+        width: 500px;
+        height: 300px;
+    }
+
+    .left{
+        transform: translateX(-120px);
+    }
+    
+    .right{
+        transform: translateX(40px);
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .arm{
+        width: 450px;
+        height: 250px;
+    }
+
+    .left{
+        transform: translateX(-120px);
+    }
+    
+    .right{
+        transform: translateX(40px);
+    }
+
+    .logo{
+        width: 100px;
+        height: 100px;
+        animation: turn1 10s linear infinite;
+    }
+
+    .one{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .two{
+        width: 600px;
+        height: 600px;
+    }
+
+    
+.main{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        height: 80vh;
+    }
+
+    .left{
+        transform: translateX(-100px);
+    }
+
+    .arm{
+        width: 400px;
+        height: 200px;
+    }
+
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    .one{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .two{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .header{
+        height: 70vh;
+    }
+
+    .left{
+        transform: translateX(-40px);
+    }
+
+    .arm{
+        width: 350px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .header{
+        height: 60vh;
+    }
+
+    .left{
+        transform: translateX(-40px);
+    }
+
+    .arm{
+        width: 300px;
+        height: 100px;
+    }
+
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .one{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .two{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header{
+        height: 50vh;
+    }
+
+    .left{
+        transform: translateX(-40px);
+    }
+
+    .arm{
+        width: 200px;
+        height: 80px;
+    }
+
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .two{
+        width: 300px;
+        height: 300px;
+    }
+
+    .sololearn__logo{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .sololearn__title{
+        font-size: 30px;
+    }
+
+    .cretificados{
+        flex-direction: column;
+    }
+
+    .container__imgs{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .header{
+        height: 50vh;
+    }
+
+    .left{
+        transform: translateX(-40px);
+    }
+
+    .arm{
+        width: 180px;
+        height: 70px;
+    }
+
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .one{
+        width: 150px;
+        height: 150px;
+    }
+
+    .two{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .header{
+        height: 40vh;
+    }
+
+    .left{
+        transform: translateX(-50px);
+    }
+
+    .container__imgs{
+        height: 200px;
+    }
+}
