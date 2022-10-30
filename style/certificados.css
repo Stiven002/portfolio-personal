@@ -72,6 +72,26 @@ body{
     }
 }
 
+.scroll{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+.scroll i{
+    font-size: 30px;
+}
+
+.scroll:hover{
+    transform: translateY(-5px);
+}
+
 .main{
     max-width: 1200px;
     margin: auto;
@@ -291,8 +311,8 @@ body{
     }
 
     .arm{
-        width: 350px;
-        height: 150px;
+        width: 300px;
+        height: 100px;
     }
 }
 
