@@ -160,6 +160,7 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
     font-family: 'Mukta', sans-serif;
+    transition: .3s;
 }
 
 h1, h2, h3, h4 {
