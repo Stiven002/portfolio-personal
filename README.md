@@ -1,3 +1,3 @@
 # portfolio-personal
 
-perosnal portafolio
+personal portafolio
